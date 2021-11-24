@@ -308,14 +308,14 @@ namespace WEMSharp
 
         public void GenerateOGG(string fileLocation, string codebooksLocation, bool inlineCodebooks, bool fullSetup)
         {
-            if (inlineCodebooks && string.IsNullOrEmpty(codebooksLocation))
+            /*if (inlineCodebooks && string.IsNullOrEmpty(codebooksLocation))
             {
                 throw new ArgumentException("Only one of Inline Codebooks or Codebooks Location can be set");
             }
             else if (!inlineCodebooks && string.IsNullOrEmpty(codebooksLocation))
             {
                 throw new ArgumentException("Either Inline Codebooks or Codebooks Location must be set");
-            }
+            }*/
 
             using (OggStream ogg = new OggStream(File.Create(fileLocation)))
             {
